@@ -1,11 +1,13 @@
 ## Programı Çalıştırmak için
 Her iki appsettings.json dosyasınıda ayarlanmalı
+```csharp
 "ConnectionStrings": {
     "DefaultConnection": "Server=servername;Database=DbName;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
 }
-
+```
 ## Database çağırması Migrations işlemi
 dotnet ef migrations add DbDeneme --project C:\TaskManager\TaskUI.csproj // Oluşturma
+
 dotnet ef database update --project C:\TaskManager\TaskUI.csproj // Güncelleme
 
 Aldığımız Token Rolüne göre Get isteği gösteriliyor
